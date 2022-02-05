@@ -1,12 +1,18 @@
 #include <iostream>
 using namespace std;
 
+#define n 100
+
 class stack
 {
 public:
     int size;
     int top;
-    stack *arr;
+    int *arr;
+
+    stack(){
+        arr=new int [n];
+    }
 };
 
 void isEmpty(stack *ptr)
@@ -29,7 +35,13 @@ int main()
     stack *s1=new stack;
     s1->size = 10;
     s1->top = -1;
-    s1->arr = new stack;
+    s1->arr;
+
+    isEmpty(s1);
+    isFull(s1);
+
+    s1->arr[0]=1;
+    s1->top++;
 
     isEmpty(s1);
     isFull(s1);
