@@ -1,0 +1,5 @@
+-Head will be considered as the top, as we can pop or push an element in O(1)
+-If head = NULL, the stack is stated to be empty
+-The stack will be full if the system memory will be exhausted
+-But we can set a custom size of the linked list
+-If we try to allocate the memory in heap, the pointer will return NULL if the heap memory is full
